@@ -1,0 +1,41 @@
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.radio-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.radio-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+td {
+  border: none;
+}
+table {
+  width: 100%;
+}
+.submit-button {
+  background-color: #1098ad;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px; /* Rounded corners */
+}
+.submit-button:hover {
+  background-color: #0d6d8a; /* Warna tombol saat di-hover */
+}

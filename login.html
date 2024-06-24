@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Praktikum PABWE</title>
+    <link rel="stylesheet" href="loginlayout.css" />
+    <link rel="stylesheet" href="loginsyle.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <h1>&#128273; Login</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="challenges.html">Challenges</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="login.html" class="active">Login</a>
+        </nav>
+      </header>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const navLinks = document.querySelectorAll("nav a");
+          const currentPath = window.location.pathname.split("/").pop();
+
+          navLinks.forEach((link) => {
+            if (link.getAttribute("href") === currentPath) {
+              link.classList.add("active");
+            }
+          });
+        });
+      </script>
+      <main>
+        <form>
+          <div class="form-container">
+            <fieldset>
+              <legend>Login</legend>
+              <label for="email">Email</label>
+              <input type="text" id="email" />
+              <label for="password">Password</label>
+              <input type="password" id="password" /><br /><br />
+              <button type="submit">Submit</button>
+            </fieldset>
+
+            <fieldset>
+              <legend>Register</legend>
+              <label for="nama_lengkap">Nama Lengkap</label>
+              <input type="text" id="nama_lengkap" />
+              <label for="register-email">Email</label>
+              <input type="text" id="register-email" />
+              <div class="pekerjaan-container">
+                <label for="pekerjaan">Pekerjaan</label>
+                <select name="pekerjaan" id="pekerjaan">
+                  <option value="0">Mahasiswa</option>
+                  <option value="1">Asisten Dosen</option>
+                  <option value="2">Dosen</option>
+                </select>
+              </div>
+              <br />
+              <label for="register-password">Password</label>
+              <input type="password" id="register-password" /><br /><br />
+              <button type="submit">Submit</button>
+            </fieldset>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

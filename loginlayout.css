@@ -1,0 +1,30 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="pekerjaan"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+td {
+  border: none;
+}
+
+.submit-button {
+  background-color: #1098ad;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px; /* Rounded corners */
+  align-items: center;
+}
+.submit-button:hover {
+  background-color: #0d6d8a; /* Warna tombol saat di-hover */
+}

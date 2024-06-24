@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #444444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+caption {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*Stling link*/
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+
+a:active {
+  background-color: gainsboro;
+  font-style: italic;
+}
+
+nav a:link {
+  margin: 10px 30px 0 0;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
+nav a.active {
+  font-weight: bold;
+  color: rgba(6, 53, 205, 0.93);
+  text-decoration: underline;
+}

@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #444444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+h1 {
+  color: #1098ad;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container fieldset {
+  flex: 1;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.form-container legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; /* Menengahkan teks */
+  color: #1098ad; /* Memberikan warna teks */
+  font-size: 40px; /* Menyesuaikan ukuran teks */
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input {
+  border-radius: 4px;
+}
+
+.form-container select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-container button {
+  background-color: #1098ad;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.pekerjaan-container {
+  margin-top: 10px; /* Tambahkan margin atas untuk memberi ruang */
+}
+
+.pekerjaan-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.pekerjaan-container select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/*Stling link*/
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+
+a:active {
+  background-color: gainsboro;
+  font-style: italic;
+}
+
+nav a:link {
+  margin: 10px 30px 0 0;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
+nav a.active {
+  font-weight: bold;
+  color: rgba(6, 53, 205, 0.93);
+  text-decoration: underline;
+}
